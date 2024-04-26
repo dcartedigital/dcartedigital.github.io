@@ -15,6 +15,10 @@ body {
     color: #3f3f3f;
 }
 
+.active {
+    color: #0d6efd !important;
+}
+
 #menu form>button {
     font-size: 18px;
     font-weight: bold;
@@ -25,6 +29,25 @@ body {
     transition: 0.5s;
 }
 
+.dropdown-menu li{
+    position: relative;
+}
+
+.dropdown-menu .submenu{
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: -7px;
+}
+
+.dropdown-menu>li:hover>.submenu{
+    display: block;
+}
+
+.dropdown-menu .submenu-left{
+    right: 100px;
+    left: auto;
+}
 /*===================SLIDER DE IMAGENES==========================*/
 
 .carousel-inner {
@@ -170,6 +193,19 @@ footer p {
 }
 
 @media (max-width:768px) {
+    .dropdown-menu .submenu{
+        left: 25%;
+        top: 0px;
+        width: 100%;
+        margin-left: 15px;
+    }
+    .dropdown-menu .multi-menu{
+        left: 95%;    
+    }
+    .dropdown-menu .submenu-left{
+        left: 50%;
+    }
+
     #portafolio, #equipo {
         width: 90% !important;
         margin: auto;

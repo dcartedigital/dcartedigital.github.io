@@ -32,22 +32,27 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                        <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                    </li>                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="#equipo">Nosotros</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             Portafolio
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Desarrollo</a></li>
-                            <li><a class="dropdown-item" href="Gym.html">Diseño Web</a></li>
-                            <li><a class="dropdown-item" href="#">Branding</a></li>
-                            <li><a class="dropdown-item" href="#">SEO</a></li>
+                            <li><a class="nav-link dropdown-item" href="#">Desarrollo</a></li>
+                            <li><a class="nav-link dropdown-item" href="#">Diseño Web &raquo;</a>
+                            <ul class="dropdown-menu submenu">
+                                <li><a class="nav-link dropdown-item" href="Wordpress.html">WordPress</a>
+                                <li><a class="nav-link dropdown-item" href="HtmlyCss.html">HTML & CSS</a>
+                            </ul>                            
+                            </li>
+                            <li><a class="nav-link dropdown-item" href="#">Branding</a></li>
+                            <li><a class="nav-link dropdown-item" href="#">SEO</a></li>
                         </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#equipo">Equipo</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#seccion-contacto">Contacto</a>
@@ -72,7 +77,7 @@
     <section>
         <div class="container w-50 m-auto text-center" id="gym-pdf">
             <h1 class="mt-5 mb-5 fs-2">Screenshot Pagina Gym en <span class="text-primary">WordPress</span></h1>
-            <p class="fs-4">Descripción de la pagina</p>
+            <p class="fs-4">Página de Inicio</p>
         </div>
         <div class="mt-5 text-center d-flex justify-content-center">
             <img class="w-100" id="img-gymwp" src="img/GymWebWordpress.png" alt="GymWebWordpress">
