@@ -196,8 +196,8 @@ footer p {
     .dropdown-menu .submenu{
         left: 25%;
         top: 0px;
-        width: 100%;
-        margin-left: 15px;
+        width: 50%;
+        margin-left: 80px;
     }
     .dropdown-menu .multi-menu{
         left: 95%;    
